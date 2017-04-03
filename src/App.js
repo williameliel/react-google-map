@@ -1,24 +1,21 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import GoogleMapReact from 'google-map-react';
+import GoogleMap from './GoogleMap';
+import PlacesList from './PlacesList';
 
 
 class App extends Component {
-  static defaultProps = {
-    center: {lat: 40.785091, lng: -73.968285},
-    zoom: 12
-  };
+ 
 
   render() {
     return (
-    <div style={{height:'100vh', width: '100%'}}> 
-       <GoogleMapReact
-        defaultCenter={this.props.center}
-        defaultZoom={this.props.zoom}
-      />
-
-    </div>
+    <div className="wrapper">
+     
+      <GoogleMap />
       
+      <PlacesList />
+      
+      </div> 
     );
   }
 }

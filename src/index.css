@@ -3,3 +3,16 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.wrapper{
+  display: flex;
+  flex-flow: row wrap;
+}
+.map{
+  order : 1;
+  height : 100vh;
+  width: 80%;
+}
+.aside{
+  order : 2;
+  height: 100vh;
+}
